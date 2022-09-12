@@ -1,0 +1,19 @@
+#include<iostream.h>
+using namespace std;
+int main()
+{
+  int x,y,z;
+  cout<<"enter 3 values";
+  cin>>x>>y>>z;
+
+     if(x>y  &&  x>z)
+     { cout<<x;
+     }
+      else if(y>z  &&  y>x)
+      {cout<<y;}
+     else
+     {
+         cout<<z;
+     }
+     return 0;
+}
