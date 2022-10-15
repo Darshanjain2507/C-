@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+bool linearsearch(int arr[],int size,int k)
+{
+    if(size==0)
+    {   return false;
+        }
+    if(arr[0]==k)
+      {
+          return true;
+      }
+     else
+       {
+            bool aageka=linearsearch(arr+1,size-1,k);
+        return aageka;
+
+       }
+}
+int main()
+{
+  int arr[5]={2,3,5,9,65};
+  int k=1;
+  int size=5;
+   bool ans=linearsearch(arr,size,k);
+   if(ans)
+   {
+       cout<<"present";
+
+   }
+  else
+    cout<<"absent!!!!!!!!";
+
+
+}
